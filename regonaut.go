@@ -52,18 +52,18 @@ const (
 	patternDirectionBackward patternDirection = -1
 )
 
-type SyntaxError struct {
+type syntaxError struct {
 	err string
 }
 
-func (e SyntaxError) Error() string {
+func (e syntaxError) Error() string {
 	return e.err
 }
 
-var _ error = (*SyntaxError)(nil)
+var _ error = (*syntaxError)(nil)
 
-func newSyntaxError(err string) SyntaxError {
-	return SyntaxError{err: err}
+func newSyntaxError(err string) syntaxError {
+	return syntaxError{err: err}
 }
 
 type namedCaptureAhead struct {
