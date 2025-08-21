@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "packageManager": "pnpm@10.13.1",
+  "scripts": {
+    "gen-test262-tests": "node ./gen-test262-tests.ts",
+    "gen-unicode": "node ./gen-unicode.ts"
+  },
+  "dependencies": {
+    "@babel/core": "7.28.0",
+    "@types/babel__core": "7.20.5",
+    "@types/js-yaml": "4.0.9",
+    "@types/node": "24.1.0",
+    "@unicode/unicode-16.0.0": "1.6.7",
+    "js-yaml": "4.1.0",
+    "unicode-property-value-aliases-ecmascript": "2.2.0"
+  }
+}
